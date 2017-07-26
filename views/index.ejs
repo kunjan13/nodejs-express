@@ -13,5 +13,12 @@
         <p>
             <%= process.env.websitename %>
         </p>
+
+
+        <ul style="color:black;float:left;"><% for(var key in process.env) {%>
+           <li> <%= key %> => <%= process.env[key] %> </li>
+            <% } %>
+        </ul>
+
     </body>
 </html>
